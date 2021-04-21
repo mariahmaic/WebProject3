@@ -1,0 +1,800 @@
+/*******w***********
+
+    Project 3
+    Name: Mariah Correa
+    Date: April 21, 2021
+    Description: Project 3 Website Development & Deployment
+
+*******************/
+
+body {
+	margin: 0 auto;
+	cursor: default;
+	max-width: 1440px;
+	background:#181818;
+}
+
+.house{
+	overflow:hidden;
+}
+
+.hom body{
+	overflow: hidden;
+}
+
+.lines{
+	width: 100%;
+	max-height: 180px;
+  	height: auto;
+}
+
+.form {
+    margin-bottom: 16px;
+}
+
+.input {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.formcontrol {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formcontrol:focus {
+    border: 1px solid #313131;
+}
+
+.formcontrol textarea {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.btnprimary {
+    color: #fff;
+    background-color: #817E7E;
+    border-color: #595959;
+}
+
+.btnprimary:hover {
+    color: #fff;
+    background-color: #DF9191;
+    border-color: #5B5B5B;
+}
+
+.intro h3{
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif
+}
+
+.intro a{
+	color: white;
+	font-weight: 100;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif
+}
+
+.intro a:hover{
+	border-bottom: 1px solid white;
+}
+
+.link a {
+	display: inline-block;
+	color:rgba(255,255,255,0.8);
+	position: relative;
+	padding-bottom: 0px;
+	transition:.35s;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255, 0);
+}
+
+.link a:hover {
+	transition:.35s;
+	color:rgba(255,255,255,1.0);
+}
+
+.link a:active {
+	transition:.35s;
+	color:rgba(255,255,255,0.6);
+}
+
+.link a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	height: 1px;
+	width: 0;
+}
+
+.link a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	height: 1px;
+	width: 0;
+	background-color: rgba(255,255,255,0.6);
+	color: rgba(255,255,255,1.0);
+}
+
+.link a:hover:after {
+	width:100%;
+	left: 0;
+}
+
+.contentHome {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+	padding: 32px 64px;
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+	padding: 5px 5px 5px 5px;
+}
+
+.logo {
+	grid-column: 1 / span 4;
+}
+
+main {
+	grid-column: span 8;
+}
+
+aside {
+	grid-column: 1 / span 4;
+}
+
+footer {
+	grid-column: span 8;
+}
+
+.projectImage3col {
+	grid-column: span 4;
+}
+
+.logo {
+	float: left;
+	margin: 0;
+	height: 24px;
+}
+
+.logo h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255, 1.0);
+    letter-spacing: 0.32px;
+}
+
+#navigation {
+	float: left;
+	margin: 0;
+	display: block;
+	padding: 12px 0;
+	height:24px;
+}
+
+#navigation a {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+#active {
+	color: rgba(255,255,255,1.0);
+	border-bottom: 1px solid rgba(255,255,255, 1.0);
+}
+
+nav {
+	grid-column: span 8;
+}
+
+header {
+	grid-column: 1 / span 12;
+}
+
+#social a {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    list-style-type: none;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header h1 {
+	font-family: 'Libre Baskerville', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition:.35s;
+}
+
+.stroke {
+	-webkit-text-stroke: 1px rgba(255,255,255,1.0);
+	color: rgba(255,255,255,0.0);
+	transition:.35s;
+}
+
+aside h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    margin-top: 0;
+}
+
+aside h2 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(24,24,24,0.5);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+aside h3 {
+	font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(24,24,24,0.5);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+aside a {
+	height: 80px;
+    text-decoration: none;
+}
+
+main h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(24,24,24,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+main h2 {
+	font-family: 'Libre Baskerville', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255,255,255,0);
+    margin: 0;
+    transition: .35s;
+}
+
+main h2:hover {
+    color: rgba(255,255,255,1.0);
+}
+
+main h3 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.projectContainer {
+	display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+    padding: 32px 64px 64px;
+}
+
+.projectContainer {
+	transition: .35s;
+}
+
+.project img {
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 10px 20px 0 rgba(24,24,24,0.1);
+}
+
+.aboutText h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.aboutText p {
+	font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0.32px;
+    line-height: 28px;	
+    margin: 24px 0 24px 0;
+}
+
+.projectImage3col img {
+	width: 100%;
+	height: auto;
+	padding: 0 0 32px 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+footer {
+	padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 740px)  {
+	.contentHome, .contentProject, .top  {
+		padding: 20px 30px;
+	}
+
+body {
+	margin: 0 auto;
+	cursor: default;
+	max-width: 1440px;
+	background:#181818;
+}
+
+.house{
+	overflow:hidden;
+}
+
+.hom body{
+	overflow: hidden;
+}
+
+.lines{
+	width: 100%;
+	max-height: 180px;
+  	height: auto;
+}
+
+.form {
+    margin-bottom: 16px;
+}
+
+.input {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.formcontrol {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formcontrol:focus {
+    border: 1px solid #313131;
+}
+
+.formcontrol textarea {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+.label label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.btnprimary {
+    color: #fff;
+    background-color: #817E7E;
+    border-color: #595959;
+}
+
+.btnprimary:hover {
+    color: #fff;
+    background-color: #DF9191;
+    border-color: #5B5B5B;
+}
+
+.intro h3{
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif
+}
+
+.intro a{
+	color: white;
+	font-weight: 100;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif
+}
+
+.intro a:hover{
+	border-bottom: 1px solid white;
+}
+
+.link a {
+	display: inline-block;
+	color:rgba(255,255,255,0.8);
+	position: relative;
+	padding-bottom: 0px;
+	transition:.35s;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255, 0);
+}
+
+.link a:hover {
+	transition:.35s;
+	color:rgba(255,255,255,1.0);
+}
+
+.link a:active {
+	transition:.35s;
+	color:rgba(255,255,255,0.6);
+}
+
+.link a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	height: 1px;
+	width: 0;
+}
+
+.link a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	height: 1px;
+	width: 0;
+	background-color: rgba(255,255,255,0.6);
+	color: rgba(255,255,255,1.0);
+}
+
+.link a:hover:after {
+	width:100%;
+	left: 0;
+}
+
+.contentHome {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+	padding: 32px 64px;
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+	padding: 5px 5px 5px 5px;
+}
+
+.logo {
+	grid-column: 1 / span 4;
+}
+
+main {
+	grid-column: span 8;
+}
+
+aside {
+	grid-column: 1 / span 4;
+}
+
+footer {
+	grid-column: span 8;
+}
+
+.projectImage3col {
+	grid-column: span 4;
+}
+
+.logo {
+	float: left;
+	margin: 0;
+	height: 24px;
+}
+
+.logo h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255, 1.0);
+    letter-spacing: 0.32px;
+}
+
+#navigation {
+	float: left;
+	margin: 0;
+	display: block;
+	padding: 12px 0;
+	height:24px;
+}
+
+#navigation a {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+#active {
+	color: rgba(255,255,255,1.0);
+	border-bottom: 1px solid rgba(255,255,255, 1.0);
+}
+
+nav {
+	grid-column: span 8;
+}
+
+header {
+	grid-column: 1 / span 12;
+}
+
+#social a {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    list-style-type: none;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header h1 {
+	font-family: 'Libre Baskerville', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition:.35s;
+}
+
+.stroke {
+	-webkit-text-stroke: 1px rgba(255,255,255,1.0);
+	color: rgba(255,255,255,0.0);
+	transition:.35s;
+}
+
+aside h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    margin-top: 0;
+}
+
+aside h2 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(24,24,24,0.5);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+aside h3 {
+	font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(24,24,24,0.5);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+aside a {
+	height: 80px;
+    text-decoration: none;
+}
+
+main h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(24,24,24,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+main h2 {
+	font-family: 'Libre Baskerville', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255,255,255,0);
+    margin: 0;
+    transition: .35s;
+}
+
+main h2:hover {
+    color: rgba(255,255,255,1.0);
+}
+
+main h3 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.projectContainer {
+	display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+    padding: 32px 64px 64px;
+}
+
+.projectContainer {
+	transition: .35s;
+}
+
+.project img {
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 10px 20px 0 rgba(24,24,24,0.1);
+}
+
+.aboutText h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.aboutText p {
+	font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255,255,255,1.0);
+    letter-spacing: 0.32px;
+    line-height: 28px;	
+    margin: 24px 0 24px 0;
+}
+
+.projectImage3col img {
+	width: 100%;
+	height: auto;
+	padding: 0 0 32px 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+footer {
+	padding-bottom: 24px;
+}
+}
